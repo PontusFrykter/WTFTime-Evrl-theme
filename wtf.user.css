@@ -1,0 +1,1385 @@
+/* ==UserStyle==
+@name           WTF_TIME - EVRL Black Theme
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+@preprocessor uso
+@var    color   DarkColored "Тёмный цвет" #3A5767
+@var    color   Colored "Цвет" #5F8093
+@var    color   CoolColored "Насыщенный цвет" #699CB9
+@var    color   LightColored "Светлый цвет" #A0C7DD
+@var    color   Lightest "Самый светлый" #E5EAEC
+@var    color   PrettyLight "Довольно светлый" #CBD1D4
+@var    color   NotLight "Скорее светлый" #AEB3B5
+@var    color   DarkLight "Темно-светлый" #888888
+@var    color   DarkMiddle "Менее темный" #555555
+@var    color   PrettyDark "Довольно темный" #444444
+@var    color   AlmostDarkest "Почти самый темный" #333333
+@var    color   Darkest "Самый темный" #252525
+==/UserStyle== */
+@-moz-document domain("wtftime.ru") {
+.logo_link .logo .wtf:after{
+    content: 'EVRL';
+    visibility: visible;
+    position: absolute;
+    top: -8px;
+    left: -17px;
+    font-size: 45px;
+}
+html body nav#topnav-color div div.navbar-header a div div.wtf {
+    visibility: hidden;
+    position: relative;
+}
+body:not(.v8) .logo_link .logo .time {
+    visibility: hidden;
+    position: relative;
+}
+.logo_link .logo {
+    background-color: #556cfa00;
+    font-family: 'Iceland';
+}
+.colored .navbar {
+    background-image: none !important;
+    background-color: /*[[DarkColored]]*/;
+}
+.colored #leftnav .leftbuttons {
+    background-image: -webkit-linear-gradient(-90deg,/*[[DarkColored]]*/ 60px,/*[[DarkColored]]*/ 100%);
+    background-color: /*[[DarkColored]]*/ ;
+}
+body {
+    background-color: /*[[AlmostDarkest]]*/;
+}
+.nm .tab-block .tabs .tab:hover, .nm .tab-block .tabs .tab.selected {
+    background-color: /*[[Colored]]*/;
+}
+.nm .tab-block .content {
+    background-color: /*[[PrettyDark]]*/;
+}
+.nm .tab-block .content .top-title {
+    color: /*[[Lightest]]*/;
+}
+.nm .tab-block>div {
+    border: 1px solid /*[[Darkest]]*/;
+    background-color: /*[[PrettyDark]]*/;
+}
+.nm .tab-block .control-move>li div {
+    float: none;
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid /*[[CoolColored]]*/;
+    border-top: 3px solid /*[[CoolColored]]*/;
+    transition: all 250ms linear;
+}
+.nm .tab-block .control-move>li:hover>div {
+    border-left: 3px solid /*[[Colored]]*/;
+    border-top: 3px solid /*[[Colored]]*/;
+}
+.navbar-search .form-control {
+    background-color: /*[[Lightest]]*/;
+}
+.navbar-search:before {
+    color: /*[[DarkColored]]*/;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: /*[[Lightest]]*/;
+}
+.title-max-width>a:visited {
+    color: /*[[PrettyLight]]*/;
+}
+    .nm .tab-block .content.articles .items>.feed-item .feed-item-content:hover {
+    border: 1px solid /*[[DarkLight]]*/;
+}
+.feed-item-content {
+    background-color: /*[[PrettyDark]]*/;
+}
+.feed_avatar {
+    background-color: /*[[PrettyDark]]*/;
+    padding: 3px;
+    margin: -25px 0 0 0;
+    right: 15px;
+}
+div#content_container div:nth-child(n) > div > div.feed_avatar > a > img {
+    margin: 3px !important;
+}
+.talks_message_body {
+    line-height: 160%;
+    color: /*[[PrettyLight]]*/;
+}
+a {
+    color: /*[[CoolColored]]*/;
+}
+a:hover {
+    color: /*[[Colored]]*/;
+}
+.ilikeit_text {
+    float: right;
+    padding: 2px 6px;
+    color: /*[[CoolColored]]*/;
+    cursor: pointer;
+    right: 0;
+    overflow: hidden;
+    content: 'Агонь!';
+    visibility: visible;
+}
+.nm .tab-block .content.articles .items>.feed-item .feed-item-content {
+    border: 1px solid /*[[DarkMiddle]]*/;
+}
+.dropdown-menu {
+    background-color: /*[[AlmostDarkest]]*/;
+}
+.feed-item .bottom_droptags .dropdown-menu>li>a {
+    color: /*[[Lightest]]*/;
+}
+.feed-item .bottom_droptags .dropdown-menu>li>a:hover {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[Colored]]*/;
+}
+.feed-item .bottom_droptags.open .dropdown-toggle, .feed-item .bottom_droptags .dropdown-toggle:hover {
+    background-color: /*[[PrettyDark]]*/;
+}
+.feed-item .bottom_droptags.open .dropdown-toggle>div, .feed-item .bottom_droptags .dropdown-toggle:hover>div {
+    background-color: /*[[Colored]]*/;
+}
+.feed-item .bottom_droptags .dropdown-toggle {
+    border: 1px solid /*[[DarkLight]]*/;
+}
+a:hover, a:focus {
+    color: /*[[Colored]]*/;
+}
+.title-max-width>a {
+    color: /*[[PrettyLight]]*/;
+}
+body {
+    color: /*[[PrettyLight]]*/;
+}
+.nm .tab-block .content.articles .items>.feed-item .bottom-comment {
+    border-top: 1px solid /*[[DarkMiddle]]*/;
+}
+.nm .tab-block .rblock {
+    background-color: /*[[PrettyDark]]*/;
+}
+.stories-side-content .block.popular {
+    background-color: /*[[AlmostDarkest]]*/;
+}
+.stories-side-content .block>.list .best_article {
+    color: /*[[NotLight]]*/;
+}
+.stories-side-content .block>.list .sub_info .sub .sub_button {
+    color: /*[[PrettyLight]]*/;
+}
+.stories-side-content .block>.list .sub_info .sub .sub_button.like .cnt {
+    padding: 1px 6px;
+    border: 1px solid /*[[DarkMiddle]]*/;
+}
+.stories-side-content .block>.list .sub_info .sub .sub_button.like.inactive .sub_container {
+    border: 1px solid /*[[DarkMiddle]]*/;
+}
+.stories-side-content .block>.list .sub_info .sub .sub_button.like .sub_container {
+    border: 1px solid /*[[DarkMiddle]]*/;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+    background-color: /*[[CoolColored]]*/;
+}
+.stories-side-content .block>.list .sub_info .sub .sub_button.like:hover .sub_container {
+    background-color: /*[[LightColored]]*/ !important;
+border-color: /*[[LightColored]]*/ !important;
+}
+.stories-side-content .block>.list .sub_info .sub .sub_button.comment:hover .glyphicon {
+    color: /*[[CoolColored]]*/;
+}
+.stories-side-content .block {
+    background-color: /*[[AlmostDarkest]]*/;
+}
+.stories-side-content .block>.header {
+    color: /*[[NotLight]]*/;
+}
+.nm .simple-block>div>.title {
+    color: /*[[PrettyLight]]*/;
+}
+.nm .simple-block>div>.content.gold-files>div>.item>a:hover {
+    background-color: /*[[Colored]]*/;
+}
+.nm .simple-block>div>.content {
+    background-color: /*[[PrettyDark]]*/;
+    border: 1px solid /*[[Darkest]]*/;
+}
+.nm .simple-block>div>.content.gold-files>div>.item>a .title {
+    color: /*[[PrettyLight]]*/;
+}
+.nm .simple-block>div>.content.gold-files>div>.item>a:visited .title {
+    color: /*[[DarkLight]]*/;
+}
+.nm .simple-block>div>.content.gold-files>div>.item>a:visited:hover .title {
+    color: /*[[Lightest]]*/;
+}
+.nm .simple-block>div .control-move>li:hover {
+    background-color: /*[[AlmostDarkest]]*/;
+}
+.nm .simple-block>div .control-move>li div {
+    float: none;
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid /*[[Colored]]*/;
+    border-top: 3px solid /*[[Colored]]*/;
+}
+.nm .simple-block>div .control-move>li.disabled:hover {
+    background-color: /*[[PrettyDark]]*/;
+}
+.nm .tab-pagination .pagination>li>a, .nm .tab-pagination .pagination>li>span {
+    color: /*[[Colored]]*/;
+}
+.nm .tab-pagination .pagination>.active>a, .nm .tab-pagination .pagination>.active>span, .nm .tab-pagination .pagination>.active>a:hover, .nm .tab-pagination .pagination>.active>span:hover, .nm .tab-pagination .pagination>.active>a:focus, .nm .tab-pagination .pagination>.active>span:focus {
+    color: /*[[CoolColored]]*/;
+}
+.nm .tab-pagination .nav-left>a span.glyphicon, .nm .tab-pagination .nav-right>a span.glyphicon {
+    color: /*[[Colored]]*/;
+}
+.profile-promo-list:hover {
+    background-color: /*[[PrettyDark]]*/;
+}
+.glyphicon {
+    color: /*[[Colored]]*/;
+}
+.dropdown-menu>li>a {
+    color: /*[[PrettyLight]]*/;
+}
+.dropdown-menu .divider {
+    background-color: /*[[Darkest]]*/;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[Colored]]*/;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+    background-color: /*[[Colored]]*/;
+}
+#search_window .topsearch-result .file-topbtn:hover, #search_window .topsearch-result .file-topbtn.checked {
+    background-color: /*[[Colored]]*/;
+}
+#search_window .search-all-loc>a {
+    background-color: /*[[Colored]]*/;
+}
+#search_window .search-all-loc>a:hover {
+    background-color: /*[[CoolColored]]*/;
+}
+#search_window .topsearch-result .file-topbtn.checked:hover {
+    background-color: /*[[CoolColored]]*/;
+}
+body.colored.adaptive.searchbox.modal-open:nth-child(7) div:nth-child(21) div.search_body div.search_window_result div.topsearch-result > div.nm.content:nth-child(4) {
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+.nm .simple-block>div>.content.top-news>a:visited .title {
+    color: /*[[DarkLight]]*/;
+}
+.nm .simple-block>div>.content.top-news>a:visited:hover .title {
+    color: /*[[Lightest]]*/;
+}
+.nm .simple-block>div>.content.top-news>a .title {
+    color: /*[[PrettyLight]]*/;
+}
+.nm .simple-block>div>.content.top-news>a:hover {
+    background-color: /*[[Colored]]*/;
+}
+.nm .simple-block>div>.content.top-news>a {
+    border-bottom: 1px solid /*[[AlmostDarkest]]*/;
+}
+.nm .simple-block>div>.content {
+    background-color: /*[[PrettyDark]]*/;
+    border: 1px solid /*[[AlmostDarkest]]*/;
+}
+.nm .simple-block>div .more a {
+    color: /*[[Colored]]*/;
+}
+.nm .simple-block>div .more {
+    border: 1px solid /*[[PrettyDark]]*/;
+    background-color: /*[[AlmostDarkest]]*/;
+}
+#search_window .search_window_close:hover .glyphicon {
+    color: /*[[Colored]]*/;
+}
+.btn-success:active, .btn-success.active {
+    background-color: /*[[Colored]]*/;
+    border-color: /*[[Colored]]*/;
+}
+.btn-success {
+    background-image: linear-gradient(to bottom,Colored 0,/*[[DarkColored]]*/ 100%);
+    border-color: /*[[Colored]]*/;
+}
+.btn-success:hover, .btn-success:focus {
+    background-color: /*[[DarkColored]]*/;
+}
+.btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[DarkColored]]*/;
+    border-color: /*[[Colored]]*/;
+}
+.input-search-box.colored {
+    background-color: /*[[PrettyDark]]*/;
+    border-bottom: 1px solid /*[[AlmostDarkest]]*/;
+}
+input, textarea, select, .uneditable-input {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[DarkMiddle]]*/;
+    border: 1px solid /*[[DarkLight]]*/;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: /*[[Colored]]*/;
+}
+.lowbutton .file-topbtn:hover, .lowbutton .file-topbtn:focus, .lowbutton .file-topbtn.checked:hover, .lowbutton .file-topbtn.checked {
+    background-color: /*[[Colored]]*/ !important;
+    color: /*[[Lightest]]*/ !important;
+    border-bottom: 2px solid /*[[LightColored]]*/;
+}
+.lowbutton .file-topbtn {
+    color: /*[[Lightest]]*/ !important;
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+.gblock {
+    background-color: /*[[PrettyDark]]*/;
+}
+.game-result .header {
+    background-color: /*[[PrettyDark]]*/;
+}
+.game-result>.header>.left>a {
+    color: /*[[Lightest]]*/;
+}
+.game-result .header .file-topbtn.search {
+    border-left: 1px solid /*[[AlmostDarkest]]*/;
+    color: /*[[LightColored]]*/;
+}
+.game-result .header .file-topbtn.search:hover, .game-result .header .file-topbtn.search:focus {
+    background-color: /*[[Colored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.nm .simple-block>div>.content.simple-news>div a.item:visited .title {
+    color: /*[[NotLight]]*/;
+}
+.nm .simple-block>div>.content.simple-news>div a.item:hover>div {
+    border: 1px solid /*[[Colored]]*/;
+}
+.nm .simple-block>div>.content.simple-news>div a.item .poster:after {
+    background-color: /*[[Colored]]*/;
+}
+
+.nm .simple-block>div>.content.simple-news>div a.item .title {
+    color: /*[[Lightest]]*/;
+}
+.nm .simple-block>div>.content.simple-news>div a.item:hover .title {
+    color: /*[[NotLight]]*/;
+}
+.nm .simple-block>div>.content.simple-news>div a.item .title {
+    background-color: /*[[PrettyDark]]*/;
+    border-radius: 0;
+}
+.nm .simple-block>div>.content.simple-news>div a.item>div {
+    border: 1px solid /*[[DarkMiddle]]*/;
+    background-color: /*[[PrettyDark]]*/;
+}
+html body div#main_container div#content_container div.entity_leftblock.art_leftblock.clearfix div.gblock.clearfix div.clearfix div.entity_rightblock.art_rightblock.article-right-tags-list div div div div {
+    margin: -426px 0 24px 0;
+}
+.entity_rightblock.art_rightblock {
+    right: -2000px;
+}
+.entity_leftblock.art_leftblock .art_leftblock_content {
+    width: 968px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    color: /*[[NotLight]]*/;
+}
+html body div#main_container div#content_container div.entity_leftblock.art_leftblock.clearfix div.gblock.clearfix div.clearfix div.entity_rightblock.art_rightblock.article-right-tags-list{
+    position: fixed !important;
+}
+#art-info-title {
+    color: /*[[Lightest]]*/;
+}
+.art-info .art-info-bottom .control:hover .glyphicon, .art-info .art-info-bottom .art-info-likes:hover .glyphicon, .art-info .art-info-bottom .art-info-comments:hover .glyphicon {
+    color: /*[[Colored]]*/;
+}
+.art-body blockquote {
+    color: /*[[PrettyLight]]*/;
+    background-color: /*[[DarkMiddle]]*/;
+}
+.art-body a, .art-body a:active, .art-body a:focus {
+    border-bottom: 1px solid /*[[Colored]]*/;
+    color: /*[[Colored]]*/;
+}
+art-embed div.header {
+    color: /*[[PrettyLight]]*/;
+}
+art-embed {
+    border: 1px solid /*[[DarkMiddle]]*/;
+}
+.art-like-container {
+    background-color: /*[[DarkMiddle]]*/;
+}
+.art-like-container h3 {
+    color: /*[[PrettyLight]]*/;
+}
+.art-like-container .favorites {
+    color: /*[[Colored]]*/;
+}
+.art-like-container .favorites span {
+    color: /*[[DarkMiddle]]*/;
+    background-color: /*[[Colored]]*/;
+}
+.art-like-container .favorites:hover {
+    color: /*[[LightColored]]*/;
+}
+.art-like-container .favorites:hover span {
+    background-color: /*[[LightColored]]*/;
+}
+.art-like-container .emolikes>div .cnt {
+    color: /*[[PrettyLight]]*/;
+}
+.art-like-container .emolikes>div.active .cnt {
+    color: /*[[Lightest]]*/;
+}
+
+.art-like-container .emolikes>div:hover .img img {
+    -webkit-filter: drop-shadow(0 0 4px /*[[Colored]]*/) drop-shadow(0 0 6px /*[[Colored]]*/) !important;
+}
+.art-like-container .emolikes>div:hover .cnt {
+    color: /*[[Colored]]*/;
+}
+.dropdown-create .dropdown-toggle>div:hover {
+    background-color: /*[[Colored]]*/;
+}
+.dropdown-create .dropdown-toggle>div>div {color: /*[[Colored]]*/;
+}
+.nm .tab-block .tabs .tab .counter {
+    background-color: /*[[Colored]]*/;
+}
+.ilikeit_text:hover {
+    background-color: /*[[Colored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.profile-promo-list.selected {
+    background-color: /*[[AlmostDarkest]]*/;
+}
+.topcontent_block.search.art_search .entity_leftblock>.gblock.options {
+    background-color: /*[[PrettyDark]]*/;
+}
+label {
+    color: /*[[Lightest]]*/;
+}
+.game_search_pagination {
+    border-bottom: 1px solid /*[[AlmostDarkest]]*/;
+    background-color: /*[[PrettyDark]]*/;
+    border-radius: 0 0 0 0;
+}
+.feed-item-content {
+    background-color: /*[[PrettyDark]]*/;
+    border-radius: 0;
+}
+.pagination>li>a, .pagination>li>span {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[PrettyDark]]*/;
+    border: 1px solid /*[[AlmostDarkest]]*/;
+}
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[Colored]]*/;
+    border-color: /*[[AlmostDarkest]]*/;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[CoolColored]]*/;
+    border-color: /*[[CoolColored]]*/;
+}
+.bottom-tag {
+    border-left: 2px solid /*[[LightColored]]*/;
+    background-color: /*[[Colored]]*/;
+    color:/*[[PrettyDark]]*/;
+}
+.bottom-tag:focus, .bottom-tag:hover {
+    background-color: /*[[LightColored]]*/;
+}
+.game_search_pagination_bottom {
+    background-color: /*[[PrettyDark]]*/;
+}
+html body div#main_container div#content_container div.topcontent_block.search.art_search.clearfix div.entity_leftblock div#content_list div#search_all div.gblock {
+    border-top: 1px solid /*[[AlmostDarkest]]*/ !important;
+}
+.file-comments-block .file-comments-side .items {
+    background-color: /*[[PrettyDark]]*/;
+    border: 1px solid /*[[AlmostDarkest]]*/;
+}
+.file-comments-block .file-comments-side .items>.title {
+    color: /*[[NotLight]]*/;
+}
+.file-comments-block .file-comments-side .items>.list>div .about .title {
+    color: /*[[NotLight]]*/;
+}
+.file-comments-block .file-comments-side .items>.list>div .poster:before {
+    background-color: /*[[LightColored]]*/;
+}
+.art-author-container {
+    border-top: 1px solid /*[[PrettyDark]]*/;
+    background-color: /*[[DarkMiddle]]*/;
+}
+.art-author-container .follow {
+    background-color: /*[[CoolColored]]*/;
+}
+.art-author-container .follow:hover {
+    background-color: /*[[Colored]]*/;
+}
+.art-source {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[DarkMiddle]]*/;
+    border-top: 1px solid /*[[PrettyDark]]*/;
+}
+a:hover, a:focus {
+    color: /*[[Lightest]]*/;
+}
+.article_tags>.tag>div .info .title {
+    color: /*[[Lightest]]*/;
+}
+.article_tags {
+    border-top: 1px solid /*[[AlmostDarkest]]*/;
+}
+.article_tags>.tag>div .info .sub_button:hover {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[Colored]]*/;
+    border-color: /*[[Colored]]*/;
+}
+.article_tags>.tag>div .info .sub_button {
+    border: 1px solid /*[[Colored]]*/;
+    color: /*[[Colored]]*/;
+}
+.article_tags>.tag>div .poster.empty {
+    background-color: /*[[Colored]]*/;
+}
+.art-move-container {
+    border-top: 1px solid /*[[AlmostDarkest]]*/;
+}
+.art-move-container>a.move_right {
+    border-left: 1px solid /*[[AlmostDarkest]]*/;
+}
+.art-move-container>a .arrow {
+    border-left: 3px solid /*[[Colored]]*/;
+    border-top: 3px solid /*[[Colored]]*/;
+}
+.art-move-container>a:hover {
+    background-color: /*[[Colored]]*/;
+}
+.art-comments-header {
+    background-color: /*[[PrettyDark]]*/ !important;
+    border-bottom: 1px solid /*[[AlmostDarkest]]*/;
+}
+.topbutton .file-topbtn:hover, .topbutton .file-topbtn:focus, .topbutton .file-topbtn.checked:hover, .topbutton .file-topbtn.checked {
+    color: /*[[Lightest]]*/ !important;
+    border-bottom: 2px solid /*[[Colored]]*/;
+}
+#js-slider .reply-box, .mg_article_block .reply-box, .art_leftblock .reply-box, .articles-wrapper .reply-box {
+    border-bottom: 1px solid /*[[AlmostDarkest]]*/;
+}
+.control-container {
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+.popover {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[PrettyDark]]*/;
+    border: 1px solid /*[[AlmostDarkest]]*/;
+}
+
+.art_leftblock>.gblock:first-child {
+    margin-top: 0px;
+}
+html body div#main_container div#content_container div.entity_leftblock.art_leftblock.clearfix div.nm.article-other.guides div div#matched_ads_BRKEEQWGWXQI ya-recommendation-widget
+{
+    visibility: hidden;
+    height: 0;
+}
+hr {
+    border-top: 1px solid /*[[AlmostDarkest]]*/;
+    border-bottom: 1px solid /*[[AlmostDarkest]]*/;
+}
+#leftnav-top:hover {
+    background-color: /*[[Colored]]*/;
+}
+html body div#main_container div#content_container div.entity_leftblock.art_leftblock.clearfix div.nm.article-other.guides div div
+{
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+.art_comments.imp .feed-item-content .cmtlike-box .like-count.pos {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[CoolColored]]*/;
+}
+.art_comments.imp .feed-item-content .cmtlike-box .like-button {
+    background-color: /*[[DarkMiddle]]*/;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;}
+.art_comments.imp .feed-item-content .cmtlike-box .like-count.neg {
+    background-color: #534141;
+    color: #b96969;
+}
+.art_comments.imp .feed-item-content .cmtlike-box .like-button.like-minus.active, .art_comments.imp .feed-item-content .cmtlike-box .like-button.like-minus:hover {
+    background-color: #b96969;
+}
+.art_comments.imp .feed-item-content .cmtlike-box .like-button.like-plus.active, .art_comments.imp .feed-item-content .cmtlike-box .like-button.like-plus:hover {
+    background-color: /*[[CoolColored]]*/;
+}
+.art_comments.imp .comment-childs {
+    border-left: 1px dashed /*[[AlmostDarkest]]*/;
+}
+.art_comments.imp .feed-item:not(.has-childs) .comment-tree-element {
+    border-top: 1px dashed /*[[AlmostDarkest]]*/;
+}
+.art_comments.imp>.feed-item.has-childs>.feed-item-content .comment-tree-element {
+    border-left: 1px dashed /*[[AlmostDarkest]]*/;
+}
+.art_comments.imp .comment-childs .talk-reply:last-child:after {
+    background-color: /*[[PrettyDark]]*/
+}
+.art_comments.imp .feed-item-content .talks_message_top .user-nick {
+    font-weight: 500;
+    color: /*[[CoolColored]]*/;
+}
+.art_comments.imp .feed-item-content .talks_message_top .premium-rank {
+    color: /*[[NotLight]]*/;
+    background-color: /*[[DarkMiddle]]*/;
+}
+.art_comments.imp .feed-item-content .talks_message_body a {
+    color: /*[[CoolColored]]*/;
+}
+.art_comments.imp .feed-item-content .cmtlike-box .like-count {
+    background-color: /*[[DarkMiddle]]*/;
+    color: /*[[NotLight]]*/;
+}
+input, textarea, select, .uneditable-input {
+    border: 1px solid /*[[AlmostDarkest]]*/
+}
+.content-inner-wrapper {
+    background-color: /*[[Lightest]]*/;
+    font-family: 'Roboto', Tahoma !important
+}
+.wide-article .articles-wrapper .mg_article .mg_text {
+    width: 690px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    font-family: 'Roboto', Tahoma !important;
+    font-size: 15px !important;
+    line-height: 28px !important;
+    color: /*[[NotLight]]*/ !important;
+}
+.articles-wrapper .article-entity {
+    margin: 30px 0 !important;
+}
+.articles-wrapper {
+    padding: 0 0px;
+}
+.content-inner-wrapper {
+    background-color: /*[[PrettyDark]]*/;
+}
+.wide-article .articles-wrapper .mg_article .mg_delimeter {
+    margin: 30px auto;
+    width: 690px;
+}
+body:not(.v8) .wide-article .articles-wrapper .mg_article .mg_images {
+    width: 968px;
+}
+.articles-wrapper .article-entity .article-likeblock .article-like-button .cnt {
+    border: 1px solid /*[[AlmostDarkest]]*/;
+}
+.articles-wrapper .article-entity .article-likeblock .article-like-button.like.inactive .sub_container {
+    border: 1px solid /*[[AlmostDarkest]]*/;
+}
+.articles-wrapper .article-entity .article-likeblock .article-like-button .sub_container {
+    border-color: /*[[DarkColored]]*/;
+    background-color: /*[[DarkColored]]*/;
+}
+.articles-wrapper .article-entity .article-likeblock .article-like-button.like.inactive:hover .sub_container {
+    background-color: /*[[DarkColored]]*/;
+    border-color: /*[[DarkColored]]*/;
+}
+.articles-wrapper .article-entity .article-likeblock .article-like-button.comment.inactive .sub_container .glyphicon {
+    color: /*[[CoolColored]]*/;
+}
+.articles-wrapper .article-entity .article-likeblock .article-like-button.comment.inactive .sub_container {
+    border: 1px solid /*[[AlmostDarkest]]*/;
+}
+.articles-wrapper .article-entity .article-likeblock .article-like-button.comment.inactive:hover .sub_container {
+    background-color: /*[[DarkColored]]*/;
+    border-color: /*[[DarkColored]]*/;
+}
+.articles-wrapper .article-entity .article-likeblock .article-like-button.comment.inactive:hover .sub_container .glyphicon {
+    color: /*[[LightColored]]*/;
+}
+.content-top-wrapper a {
+    color: /*[[CoolColored]]*/;
+}
+.articles-wrapper .art-author-container {
+    background-color: /*[[DarkMiddle]]*/;
+}
+html body div#main_container div#content_container div div div.articles-wrapper div.article-entity.mg_article_block div.art-author-container div.info a
+{
+    color: /*[[NotLight]]*/ !important;
+}
+.articles-wrapper .art-author-container .follow {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: /*[[DarkMiddle]]*/;
+    border-color: transparent;
+    color: /*[[LightColored]]*/;
+}
+.articles-wrapper .art-author-container .follow:hover {
+    color: /*[[LightColored]]*/;
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+.art-author-container .follow {
+    border-radius: 2px !important;
+}
+.articles-wrapper .gblock {
+    border: 1px solid /*[[AlmostDarkest]]*/;
+}
+html body div#main_container div#content_container div div div.articles-wrapper div.frontpage div{
+    padding: 15px !important;
+}
+.frontpage {
+    background-color: /*[[PrettyDark]]*/;
+    color: /*[[NotLight]]*/;
+}
+.articles-wrapper .article-entity .art-body a {
+    color: /*[[CoolColored]]*/;
+}
+.articles-wrapper .article-entity .art-body a:hover {
+    color: /*[[Lightest]]*/;
+}
+.frontpage.stories>.header {
+    color: /*[[Lightest]]*/;
+    border-bottom: 1px solid /*[[CoolColored]]*/;
+}
+.frontpage.stories .block_items .list .item .title {
+    color: /*[[PrettyLight]]*/;
+}
+.frontpage.stories .block_items .list .item {
+    border: 1px solid /*[[DarkMiddle]]*/;
+}
+.frontpage.stories .block_items .list .item .short {
+    color: /*[[NotLight]]*/;
+}
+.frontpage.stories .block_items .list .item .bottomtitle .likes {
+    color: /*[[CoolColored]]*/;
+}
+.frontpage.stories .block_items .list .item .bottomtitle .likes .glyphicon {
+    color: /*[[CoolColored]]*/;}
+.frontpage.stories .block_items .list .item .bottomtitle .likes:not(.self_like):hover {
+    color: /*[[LightColored]]*/;
+}
+.frontpage.stories .block_items .list .item .bottomtitle .likes:not(.self_like):hover .glyphicon {
+    color: /*[[LightColored]]*/;
+}
+.frontpage.stories .block_items .list .item .bottomtitle .comments {
+    color: /*[[CoolColored]]*/;
+}
+.frontpage.stories .block_items .list .item .bottomtitle .comments .glyphicon {
+    color: /*[[CoolColored]]*/;
+}
+.feed-item-comments {
+    background-color: /*[[PrettyDark]]*/;}
+.talk-reply {
+    border-bottom: 1px solid /*[[DarkMiddle]]*/;
+}
+.talkbox.gametalkbox {
+    background-color: /*[[PrettyDark]]*/;
+    border-top: 1px solid /*[[DarkMiddle]]*/;
+}
+.topcontent_block.offtop .get_more:before {
+    background-color: /*[[AlmostDarkest]]*/;
+}
+.topcontent_block.offtop .get_more>span {
+    border: 1px solid /*[[AlmostDarkest]]*/;
+    background-color: /*[[PrettyDark]]*/;
+}
+.get_more {
+    color: /*[[PrettyLight]]*/;
+}
+.topcontent_block.offtop .get_more:hover>span {
+    background-color: /*[[AlmostDarkest]]*/;
+}
+.modal-content {
+    background-color: /*[[PrettyDark]]*/;
+}
+.wtfImageViewer .close:hover .glyphicon {
+    color: /*[[CoolColored]]*/;
+}
+.talks_delimeter {
+    border-bottom: 1px solid /*[[DarkMiddle]]*/;
+}
+.poll_var:hover {
+    background-color: /*[[DarkMiddle]]*/;
+}
+.poll_var.selected {
+    background-color: /*[[DarkMiddle]]*/;
+}
+.talkbox .send_container .talk-addpoll-box, .talkbox .send_container #user-addpoll-box {
+    background-color: /*[[PrettyDark]]*/;
+}
+.file-topbtn {
+    color: /*[[CoolColored]]*/;
+}
+.file-topbtn.simple:hover {
+    background-color: /*[[CoolColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.topcontent_block.offtop .whatdafuck:hover {
+    background-color: /*[[CoolColored]]*/;
+}
+.table>thead>tr>th {
+    border-bottom: 2px solid /*[[DarkMiddle]]*/;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    border-top: 1px solid /*[[DarkMiddle]]*/;
+}
+html body div#main_container div#content_container div#filterModal div.modal-dialog div div.modal-body div.nm div.simple-block div div div.clear-fix{
+    background-color: /*[[PrettyDark]]*/ !important;
+    border-top: 1px solid /*[[DarkMiddle]]*/ !important;
+    border-bottom: 1px solid /*[[DarkMiddle]]*/ !important;
+}
+.modal-footer {
+    border-top: 1px solid /*[[DarkMiddle]]*/;
+}
+.btn-default {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .75);
+    background-image: linear-gradient(to bottom,/*[[DarkMiddle]]*/ 0,/*[[PrettyDark]]*/ 100%);
+    background-repeat: repeat-x;
+    border-color: /*[[DarkMiddle]]*/;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    color: /*[[NotLight]]*/;
+    background-color: /*[[DarkMiddle]]*/;
+}
+.btn-default:hover, .btn-default:focus {
+    background-color: #177a9724;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[AlmostDarkest]]*/;
+    border-color: /*[[AlmostDarkest]]*/;
+}
+.gblock.gblock_buttons .file-topbtn {
+    color: /*[[CoolColored]]*/;
+    border-right: 1px solid /*[[AlmostDarkest]]*/;
+}
+.gblock.gblock_buttons {
+    background-color: /*[[PrettyDark]]*/;
+}
+.gblock.gblock_buttons .file-topbtn.checked, .gblock.gblock_buttons .file-topbtn:hover, .gblock.gblock_buttons .file-topbtn:focus {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.game-result .dropdown>a {
+    color: /*[[CoolColored]]*/;
+}
+.game-result .dropdown.open, .game-result .dropdown:hover {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.game-result .header .file-topbtn.search {
+    border-left: 1px solid /*[[AlmostDarkest]]*/;
+    color: /*[[CoolColored]]*/;
+}
+.game-result .header .file-topbtn.search:hover, .game-result .header .file-topbtn.search:focus {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.game-result.with-buttons button .glyphicon {
+    color: /*[[CoolColored]]*/;
+}
+.game-result.with-buttons button:hover {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.game-result .header {
+    border-bottom: 1px solid /*[[AlmostDarkest]]*/;
+}
+.game-result.with-buttons .right button {
+    border-left: 1px solid /*[[AlmostDarkest]]*/;}
+.game-result .dropdown {
+    border-left: 1px solid /*[[AlmostDarkest]]*/;
+}
+.entity_item>a>img {
+    border-radius: 0px;
+}
+.entity_item>a>div {
+    color: /*[[Lightest]]*/;
+}
+.select_genre {
+    color: /*[[CoolColored]]*/;
+}
+.selected_genre {
+    background-color: /*[[DarkColored]]*/;
+    color:/*[[Lightest]]*/;
+}
+.select_genre:hover {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.search-options>div>div {
+    color: /*[[Lightest]]*/;
+}
+.selected_platform {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.select_platform {
+    color: /*[[CoolColored]]*/;
+}
+.select_platform:hover {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.search-content>div>div>.info .title {
+    color: /*[[Lightest]]*/;
+}
+.search-content>div>div>.info .about {
+    color: /*[[NotLight]]*/;
+}
+.search-content>div>div>.info .genres .selected {
+    background-color: /*[[DarkColored]]*/;
+}
+.game_search_pagination_bottom {
+    border-top: 1px solid /*[[AlmostDarkest]]*/;
+}
+.selected_genre:hover {
+    background-color: /*[[PrettyDark]]*/;
+    color: /*[[Lightest]]*/;
+}
+.selected_platform:hover {
+    background-color: /*[[PrettyDark]]*/;
+    color: /*[[Lightest]]*/;
+}
+.frontpage.stories .top_stories .info>div>a {
+    color: /*[[Lightest]]*/;
+}
+.stories-side-content .block>.list .best_comment {
+    border-bottom: 1px solid /*[[PrettyDark]]*/;
+}
+.stories-side-content .block>.list .best_comment>.comment .user_nick {
+    color: /*[[CoolColored]]*/;
+}
+.stories-side-content .block>.list .best_comment>.comment .like_cnt {
+    color: /*[[CoolColored]]*/;
+}
+.frontpage.stories .pagination-container .pagination-more>div {
+    border: 1px solid /*[[DarkMiddle]]*/;
+    border-radius: 2px;
+    color: /*[[CoolColored]]*/;
+}
+.frontpage.stories .pagination-container .pagination-more>div:hover {
+    background-color: /*[[AlmostDarkest]]*/;
+}
+.frontpage.stories .pagination-container .paginator .pagination li.active a {
+    background-color: /*[[CoolColored]]*/;
+    border-color: /*[[CoolColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.frontpage.stories .pagination-container .paginator .pagination li a {
+    border-color: /*[[DarkMiddle]]*/;
+    color: /*[[CoolColored]]*/;
+}
+.frontpage.stories .pagination-container .paginator .pagination li a:hover {
+    background-color: /*[[CoolColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.articles-wrapper .article-entity .article-likeblock .article-like-button.edit.inactive .sub_container {
+    border: 1px solid /*[[AlmostDarkest]]*/;
+}
+.articles-wrapper .article-entity .article-likeblock .article-like-button.edit.inactive:hover .sub_container {
+    background-color: /*[[CoolColored]]*/;
+    border-color: /*[[CoolColored]]*/;
+}
+.file-topbtn {
+    color:/*[[CoolColored]]*/;
+    background-color: /*[[DarkMiddle]]*/;
+}
+.file-topbtn:hover, .file-topbtn.checked:focus {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.get_more {
+    background-color: /*[[DarkMiddle]]*/;
+    color: /*[[CoolColored]]*/;
+}
+html body div#search_window div.search_body div div div.nm.content{
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+.nm .simple-block>div .more a:hover {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.flex-table>div.header {
+    border-bottom: 2px solid /*[[DarkMiddle]]*/;
+}
+.flex-table>div {
+    border-bottom: 1px solid /*[[DarkMiddle]]*/;
+}
+.flex-table.offtop-rating .selected {
+    background-color: /*[[DarkMiddle]]*/;
+}
+.user_profile .user_profile_bottom {
+    background-color: /*[[PrettyDark]]*/;
+    color: /*[[Lightest]]*/;
+}
+.gblock>.file-topbtn {
+    color: /*[[Lightest]]*/;
+}
+.gblock>.file-topbtn:hover, .gblock>.file-topbtn:focus {
+    color: /*[[CoolColored]]*/;
+}
+.wide-menu .item.selected {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.wide-menu .item:hover {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+html body div#main_container div#content_container div.user_profile.clearfix div.entity_leftblock div.gblock.news-control{
+    border-top: 1px solid /*[[DarkMiddle]]*/ !important;
+    border-bottom: 1px solid /*[[DarkMiddle]]*/ !important;
+}
+html body div#main_container div#content_container div.user_profile.clearfix div.entity_leftblock div.gblock.news-control div div.header.clearfix.control-container.profile-statuses-control.talkbox{
+    border-top: 1px solid /*[[DarkMiddle]]*/ !important;
+}
+.bottom-tag {
+    border-left: 2px solid /*[[LightColored]]*/;
+    background-color: /*[[DarkMiddle]]*/;
+    color: /*[[CoolColored]]*/;
+}
+.bottom-tag:focus, .bottom-tag:hover {
+    background-color: /*[[CoolColored]]*/;
+}
+#profile-news-holder .feed-item-comments {
+    border-top: 1px solid /*[[DarkMiddle]]*/;
+}
+.ilikeit_text.selected {
+    background-color: /*[[DarkMiddle]]*/;
+}
+html body div#main_container div#content_container div#tabModal div.modal-dialog div div.modal-body.modal-profile.clearfix div div.clear-fix{
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+html body div#main_container div#content_container div#tabModal div.modal-dialog div div.modal-body.modal-profile.clearfix div div.main_feed_element div{
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+.modal-profile .profile-achievements-list .achievement>div {
+    background-color: /*[[DarkMiddle]]*/;
+}
+.modal-profile .profile-achievements-list .achievement .info {
+    color: /*[[DarkLight]]*/;
+}
+.modal-profile .profile-achievements-list .achievement .time {
+    color: /*[[DarkLight]]*/;
+}
+.modal-profile .profile-achievements-list .achievement .time {
+    border-left: 1px solid /*[[PrettyDark]]*/;
+}
+.modal-profile .profile-achievements-list .achievement .ainfo {
+    border-right: 1px solid /*[[PrettyDark]]*/;
+}
+.modal-profile .profile-achievements-list .achievement.inactive .title {
+    color: /*[[NotLight]]*/;
+}
+.file-topbtn .glyphicon, .dropdown .glyphicon {
+    color: /*[[CoolColored]]*/;
+}
+.dropdown ul>li .glyphicon {
+    color: /*[[CoolColored]]*/ !important;
+}
+.file-topbtn.checked {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.profile_list>div .profile_list_control>div {
+    background-color: /*[[CoolColored]]*/;
+}
+html body div#main_container div#content_container div#tabModal div.modal-dialog div div.modal-body.modal-profile.clearfix div div div div div div{
+    color: /*[[DarkLight]]*/ !important;
+}
+html body div#main_container div#content_container div#tabModal div.modal-dialog div div.modal-body.modal-profile.clearfix div div div div.clear-fix div{
+    background-color: /*[[PrettyDark]]*/;
+}
+.alert-info {
+    background-repeat: repeat-x;
+    border-color: /*[[LightColored]]*/;
+    color: /*[[CoolColored]]*/;
+}
+.talk_embed_content {
+    border: 1px solid /*[[PrettyDark]]*/;
+}
+.simple-counter.top-counter {
+    background-color: /*[[CoolColored]]*/;
+}
+html body div#main_container div#content_container div.user_profile.clearfix div.entity_leftblock div.gblock.comments-control{
+    border-top: 1px solid /*[[DarkMiddle]]*/ !important;
+    border-bottom: 1px solid /*[[DarkMiddle]]*/ !important;
+}
+.profile-comments .feed-item .feed-item-content {
+    border-bottom: 1px solid /*[[DarkMiddle]]*/;
+}
+.stories-top {
+    background-color: /*[[PrettyDark]]*/;
+}
+.stories-top .stories-top-bottom .stories-top-avatar {
+    border: 5px solid /*[[PrettyDark]]*/;
+    border-radius: 50%;
+}
+.stories-talk {
+    background-color: /*[[PrettyDark]]*/;
+    border-top: 1px solid /*[[DarkMiddle]]*/;
+}
+.stories-talk .game-news>.simple-news>.feed-item {
+    border: 1px solid /*[[DarkMiddle]]*/;
+}
+.stories-talk .feed-item-comments {
+    border-top: 1px solid /*[[DarkMiddle]]*/;
+}
+.stories-side-content .block > .list.buttons > a.checked {
+    background-color: /*[[DarkColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.stories-side-content .block > .list.buttons > a {
+    color: /*[[Lightest]]*/;
+}
+.stories-side-content .block > .list.buttons > a:hover {
+    background-color: /*[[CoolColored]]*/;
+    color: /*[[Lightest]]*/;
+}
+.stories-top .stories-top-bottom .stories-top-control .control-button {
+    background-color: /*[[CoolColored]]*/;
+}
+.stories-top .stories-top-bottom .stories-top-control .control-button:hover {
+    background-color: /*[[DarkColored]]*/;
+}
+#_left_sidebar #_left_sidebar_content > div.entity a {
+    color: /*[[Lightest]]*/;
+}
+#_left_sidebar #_left_sidebar_content > div.entity {
+    border-bottom: 1px solid /*[[DarkMiddle]]*/;
+}
+#_left_sidebar {
+    border-right: 1px solid /*[[DarkMiddle]]*/;
+}
+#_left_sidebar #_left_sidebar_content > div.rated {
+    background-color: /*[[PrettyDark]]*/;
+}
+#_left_sidebar #_left_sidebar_content > div.top_promo {
+    background-color: /*[[PrettyDark]]*/;
+}
+#_left_sidebar #_left_sidebar_content > div.top_promo .top_list > a {
+    color: /*[[Lightest]]*/;
+}
+.polygon-list .polygon-item .play {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: /*[[CoolColored]]*/;
+}
+.polygon-list .polygon-item:hover .play {
+    background-color: /*[[DarkColored]]*/;
+}
+.top_user_block>div {
+    background-color: /*[[PrettyDark]]*/;
+}
+.main_feed_comment {
+    background-color: /*[[DarkMiddle]]*/;
+    border-top: 1px solid /*[[DarkMiddle]]*/;
+}
+.topuser .main_feed_comment {
+    color: /*[[Lightest]]*/;  
+}
+.topcontent_block.topusers .toprank>div {
+    background-color: /*[[DarkMiddle]]*/;
+}
+html body div#main_container div#content_container div div.game-result.with-buttons.main-block.gblock.inherit-block div div div.toprank div div div{
+    color: /*[[NotLight]]*/ !important;
+}
+html body div#main_container div#content_container div div.game-result.with-buttons.main-block.gblock.inherit-block div.users_top_rating_list div div{
+    color: /*[[Lightest]]*/ !important;
+    text-shadow: 1px 1px 0 /*[[DarkMiddle]]*/ !important;
+}
+.pm-dialog.hovered:hover {
+    background-color: /*[[DarkMiddle]]*/ !important;
+}
+.file-topbtn.checked.pm {
+    background-color: /*[[DarkMiddle]]*/;
+    color: /*[[CoolColored]]*/;
+}
+.file-topbtn.pm:hover {
+    background-color: /*[[DarkMiddle]]*/;
+    color: /*[[CoolColored]]*/;
+}
+html body div#main_container div#content_container div div div div.pm-content.content.clear-fix div#pm-list{
+    border-left: 1px solid /*[[DarkMiddle]]*/ !important;
+}
+.stories-talk .gblock {
+    border-bottom: 1px solid /*[[DarkMiddle]]*/;
+}
+.stories-talk .game-result .header {
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+.nm .tab-block .tabs.personalized {
+    background-color: /*[[DarkColored]]*/;
+}
+.nm .simple-block>div .more a {
+    border-right: 1px solid /*[[DarkMiddle]]*/;
+}
+.nm .simple-block>div>.content.wide.popular .item .title {
+    color: /*[[Lightest]]*/;
+}
+.nm .tab-block .content.statuses .items>.feed-item.talk_reply {
+    border: 1px solid /*[[DarkMiddle]]*/;
+}
+.nm .tab-block .content.statuses .items>.feed-item.talk_reply:hover {
+    border: 1px solid /*[[DarkLight]]*/;
+}
+.nm .tab-block .content.statuses .items>.feed-item.talk_reply .feed-item-comments {
+    border-top: 1px solid /*[[DarkMiddle]]*/;
+}
+.nm .tab-block .content.statuses .items>.feed-item.talk_reply {
+    width: 97%;
+}
+.fixed-status-comment>.feed-item-content {
+    background-color: /*[[DarkMiddle]]*/ !important;
+}
+.pm-dialog.pm-unread {
+    background-color: /*[[DarkMiddle]]*/;
+}
+.leftbuttons .sidebtn .side_notify {
+    background-color: /*[[CoolColored]]*/;
+}
+html body div#main_container div#content_container div div div div.pm-content.content.clear-fix div#pm-list div#pm-dialog div.talk-reply.pm-dialog.anim_msg_edit{
+    background-color: /*[[DarkMiddle]]*/ !important;
+}
+.pulse .pulse_content .pls.comment-art>.comment .user_nick {
+    color: /*[[CoolColored]]*/;
+}
+.pulse .pulse_content .pls {
+    padding: 8px;
+    border-bottom: 1px solid /*[[DarkMiddle]]*/;
+}.pulse .pulse_content {
+    background-color: /*[[PrettyDark]]*/;
+}
+.pulse .pulse_content .pls.comment-art>.comment a {
+    color: /*[[CoolColored]]*/;
+}
+.pulse .pulse_content .pulse_settings_button {
+    border-right: 1px solid /*[[DarkMiddle]]*/;
+    background-color: /*[[PrettyDark]]*/;
+}
+html body div#main_container div#content_container div.entity_leftblock.art_leftblock.clearfix div.gblock.clearfix div#messages_list div.feed-item.talk_reply.talk-reply.anim_msg_edit{
+    background-color: /*[[DarkMiddle]]*/ !important;
+}
+anim_msg_target{
+    background-color: /*[[DarkMiddle]]*/ !important;
+}
+.art_comments.imp .feed-item.has-childs .comment-childs {
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+.art_comments.imp .talk-reply {
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+.pulse .pulse_content .pls.art>div>.about {
+    color: /*[[Lightest]]*/;
+    border: 1px solid /*[[DarkMiddle]]*/;
+}
+.premium-rank {
+    color: /*[[NotLight]]*/;
+}
+.ins_art_native .ins_container {
+    background-color: /*[[PrettyDark]]*/;
+}
+.mg_article .mg_text {
+    color: /*[[NotLight]]*/;
+}
+.mg_article .art_block:hover {
+    background-color: /*[[DarkMiddle]]*/;
+}
+.mg_article textarea {
+    color: /*[[NotLight]]*/;
+}
+button {
+    background-color: /*[[DarkMiddle]]*/ !important;
+}
+.mg_co_authors {
+    background-color: /*[[PrettyDark]]*/;
+}
+.control-container
+{
+    border-top: 1px solid /*[[PrettyDark]]*/ !important;
+}
+.mg_article .art_block.activeSpoiler {
+    background-color: /*[[AlmostDarkest]]*/;
+}
+html body div#main_container div#content_container div.page_block.game.clearfix div.entity_leftblock div.gblock div.clear-fix{
+    background-color: /*[[PrettyDark]]*/ !important;
+    border-bottom: 1px solid /*[[DarkMiddle]]*/ !important;
+}
+html body div#main_container div#content_container div.page_block.game.clearfix div.entity_leftblock div.gblock div.clear-fix div#game-title{
+    color: /*[[NotLight]]*/ !important;
+}
+html body div#main_container div#content_container div.page_block.game.clearfix div.entity_leftblock div.gblock div.clear-fix div#game-wide-menu{
+    border-bottom: 1px solid /*[[PrettyDark]]*/ !important;
+}
+html body div#main_container div#content_container div.page_block.game.clearfix div.entity_rightblock.fixed_block div div div div.gblock.gblock-top div div.clear-fix div div{
+    color: /*[[DarkLight]]*/ !important;
+}
+html body div#main_container div#content_container div.page_block.film.clearfix div.entity_leftblock div.gblock div.clear-fix
+{
+    background-color: /*[[PrettyDark]]*/ !important;
+    border-bottom: 1px solid /*[[PrettyDark]]*/ !important;
+    border-radius: 2px 2px 0 0;
+}
+html body div#main_container div#content_container div.page_block.film.clearfix div.entity_leftblock div.gblock div.clear-fix div#film-title{
+    color: /*[[NotLight]]*/ !important;
+}
+html body div#main_container div#content_container div.page_block.film.clearfix div.entity_leftblock div.gblock div.clear-fix div#film-wide-menu{
+    border-bottom: 1px solid /*[[PrettyDark]]*/ !important;
+}
+html body div#main_container div#content_container div.page_block.film.clearfix div.entity_rightblock.fixed_block div div div div.gblock.gblock-top div div.clear-fix div div{
+    color: /*[[DarkLight]]*/ !important;
+}
+
+html body div#main_container div#content_container div.entity_leftblock.art_leftblock.clearfix div.gblock.clearfix div#messages_list div.feed-item.talk_reply.talk-reply.anim_msg_target
+{
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+.mg_article .mg_video iframe {
+    width: 107%;
+}
+.pulse .pulse_content .pls.comment-art>.user>.user-online.online {
+    border: 2px solid /*[[PrettyDark]]*/;
+}
+.art_comments.imp .feed-item-content .avatar_square_link .comment-online.online {
+    border: 2px solid /*[[PrettyDark]]*/;
+}
+html body div#main_container div#content_container div.entity_leftblock.art_leftblock.clearfix div.gblock.clearfix div#messages_list div.feed-item.talk_reply.talk-reply.has-childs div.comment-childs div.feed-item.talk_reply.talk-reply.anim_msg_target {
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+html body div#main_container div#content_container div.entity_leftblock.art_leftblock.clearfix div.gblock.clearfix div#messages_list div.feed-item.talk_reply.talk-reply.has-childs div.comment-childs div.feed-item.talk_reply.talk-reply.anim_msg_target div.feed-item-content div.talks_message {
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+html body div#main_container div#content_container div.entity_leftblock.art_leftblock.clearfix div.gblock.clearfix div#messages_list div.feed-item.talk_reply.talk-reply.anim_msg_target
+{
+   background-color: /*[[PrettyDark]]*/ !important; 
+}
+html body div#main_container div#content_container div.entity_leftblock.art_leftblock.clearfix div.gblock.clearfix div#messages_list div.feed-item.talk_reply.talk-reply.anim_msg_target div.feed-item-content div.talks_message
+{
+    background-color: /*[[PrettyDark]]*/ !important;
+}
+.stories-talk .stories-alert-block {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[PrettyDark]]*/;
+    border: 1px solid /*[[DarkMiddle]]*/;
+}
+.simple-counter {
+    color: /*[[Lightest]]*/;
+    background-color: /*[[CoolColored]]*/;
+}
+}
