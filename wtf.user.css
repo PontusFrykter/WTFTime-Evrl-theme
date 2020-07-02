@@ -1382,4 +1382,16 @@ html body div#main_container div#content_container div.entity_leftblock.art_left
     color: /*[[Lightest]]*/;
     background-color: /*[[CoolColored]]*/;
 }
+   .nm .tab-block .content.articles .items .item .bottom .title {
+    color: /*[[Lightest]]*/;
+    }
+    .nm .tab-block .content.articles .items .item .likes:before {
+    color: /*[[Colored]]*/;
+    }
+    .nm .tab-block .content.articles .items .item .bottom .author a {
+    color: /*[[Colored]]*/;
+    }
+    .nm .tab-block .content.articles .items .item>div:hover {
+    border: 1px solid /*[[Colored]]*/;
+}
 }
